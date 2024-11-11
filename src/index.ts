@@ -11,6 +11,10 @@ app.get("/ping", (_req: any, res: any) => {
   return res.send("pong 🏓");
 });
 
+app.get("/pong", (_req: any, res: any) => {
+  return res.send("ping 🏓");
+});
+
 app.listen(port, () => {
   return console.log(`Server is listening on ${port}`);
 });
